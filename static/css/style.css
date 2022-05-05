@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Nunito', sans-serif; */
+    /* font-family: 'Merriweather', serif; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+
+    font-style: italic;
+}
+
+section{
+    padding: 50px 100px;
+    height: 100%;
+}
+
+.back-to-top a {
+    visibility: hidden;
+    right: 30px;
+    bottom: 50px;
+    width: 50px;
+    text-align: center;
+    position: fixed;
+    background: transparent;
+    border: 2px solid rgb(32, 43, 78);
+    color: rgb(32, 43, 78);
+}
+
+.bttactive a {
+    visibility: visible;
+}
+
+.back-to-top a:hover {
+    background-color: rgb(32, 43, 78);
+    color: white;
+}
+
+
+
+/* ====================================== HOME PAGE ====================================== */
+
+
+
+.introduction {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    max-height: 100%;
+    margin-top: 50px;
+}
+
+.introduction h2 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.introduction p {
+    font-style: italic;
+}
+
+#hero {
+    margin: 10px 0 100px 0;
+}
+
+#hero  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    color: black;
+}
+
+#hero img {
+    margin-top: 20px;
+}
+
+#hero button {
+    background-color: rgb(32, 43, 78);
+}
+
+.left_side {
+    margin-right: 40px;
+}
+
+#other-blogs{
+    margin: 20px 0;
+}
+
+#other_blogs_title{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.category-title{
+    font-style: italic;
+}
+
+
+
+/* ====================================== CONTACT PAGE ====================================== */
+
+
+
+#contact{
+    padding: 30px 100px;
+    background-color: white;
+}
+
+#contact button {
+    background-color: rgb(32, 43, 78);
+}
+
+
+#about h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 2px;
+}
+
+#about p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#about img {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 13.5em;
+}
+
+#name,
+#email,
+#message {
+    /* border: 1px solid purple; */
+    border: 1px solid rgb(32, 43, 78);
+}
+
+h3 {
+    margin: auto;
+    font-size: 30px;
+    display: inline-block;  
+    border-radius: 2px;
+    border-bottom: 3px solid black;  
+}
+
+#thankyou h1{
+    margin: 30px 0;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+/* ====================================== BLOGS PAGE ====================================== */
+/* ====================================== SEARCH PAGE ====================================== */
+/* ====================================== CATEGORIES PAGE ====================================== */
+
+
+
+.search {
+    padding: 0 100px;
+    margin: 70px 0;
+}
+
+#search{
+    width: 80%;
+    padding: 15px;
+    outline: none;
+}
+
+.searchBtn{
+    padding: 15px;
+    width: 120px;
+}
+
+.searchBtn:focus {
+    outline: none;
+}
+
+.blog-posts {
+    /* border: 1px solid black; */
+    margin: 0px 0 50px 0;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.learn_timestamp {
+    justify-content: space-between;
+}
+
+.learn_timestamp a:last-child {
+    color: rgb(175, 175, 175);
+    font-size: 12px;
+}
+
+.search form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+}
+
+.searchBtn, #search {
+    border: 1px solid rgb(32, 43, 78);
+    margin: 0 5px;
+}
+
+
+
+/* ====================================== BLOG CONTENT PAGE ====================================== */
+
+
+
+.blog-content{
+    width: 80%;
+    margin: auto;
+}
+
+.blog_post_title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.blog-content h1 {
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+
+.blog-content h5 {
+    text-align: center;
+    font-style: italic;
+    color: rgb(139, 139, 139);
+}
+
+.blog-content div p{
+    /* text-align: justify; */
+    margin: 0 0 30px 0;
+}
+
+.blog-content div {
+    margin-top: 40px;
+}
+
+.blog-content div img{
+    max-width: 100%;
+    margin: auto;
+    /* margin-top: 40px; */
+    margin-bottom: 40px;
+}
+
+/* -------------- Interaction -------------------- */
+
+/* .interaction {
+    width: 64%;
+    padding: 50px 0;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.like{
+    max-width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.like i {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.like span, .comment span {
+    color: gray;
+}
+
+.comment{
+    max-width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.comment i {
+    font-size: 28px;
+    margin: 10px 0;
+} */
+
+/* -------------- Interaction end -------------------- */
+
+
+footer{
+   border-top: 2px solid black;
+}
+
+@media screen and (max-width: 360px) {
+    section{
+        padding: 10px;
+    }
+
+    .back-to-top a {
+        right: 20px;
+        bottom: 20px;
+        width: 50px;
+        background: rgb(32, 43, 78);
+        border: 2px solid rgb(32, 43, 78);
+        color: white;
+    }
+
+    #contact{
+        padding: 10px;
+    }
+
+    #about h2 {
+        margin-top: 0px;
+    }
+
+    #about img {
+        max-width: 70%;
+    }
+
+    .blog-content{
+        width: 100%;
+    }
+
+    .blog-content div img{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .right-side {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .category {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section{
+        padding: 30px;
+    }
+
+    .back-to-top a {
+        right: 20px;
+        bottom: 20px;
+        width: 50px;
+        background: rgb(32, 43, 78);
+        border: 2px solid rgb(32, 43, 78);
+        color: white;
+    }
+
+    .search {
+        padding: 0 20px;
+        margin: 70px 0;
+    }
+
+    #contact{
+        padding: 30px;
+    }
+
+    .blog-content{
+        width: 90%;
+        margin: auto;
+    }
+
+    .blog-content h1 {
+        font-size: 26px;
+    }
+
+    .blog-content h2{
+        font-size: 30px;
+    }
+
+    .introduction {
+        width: 90%;
+        padding: 0 10px 50px 10px;
+    }
+
+    .introduction h2 {
+        font-size: 38px;
+    }
+
+    #about h2 {
+        margin-bottom: 20px;
+    }
+
+    #about img {
+        max-width: 60%;
+    }
+}
